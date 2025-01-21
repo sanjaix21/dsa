@@ -7,14 +7,14 @@ public:
       for(int i = 0; i < n; i++){
         int x = nums[i];
 
-        if(x >= 1 && x <= n && x != i+1 && x != nums[x-1]){
+        while(x >= 1 && x <= n && x != i+1 && x != nums[x-1]){
           swap(nums[x-1], nums[i]);
           x = nums[i];
         }
       }
 
       for(int i = 0; i < n; i++){
-        if(nums[i] == nums[i+1]) continue;
+        if(nums[i] == i+1) continue;
         return i+1;
       }
       return n+1;
