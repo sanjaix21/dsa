@@ -45,5 +45,5 @@ int main(){
         {10, 11, 16, 20},
         {23, 30, 34, 60}
     };
-  printf("{%d}\n", sol.searchMatrix(matrix, 10u));
+  printf("{%d}\n", sol.searchMatrix(matrix, 10));
 }
